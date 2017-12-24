@@ -1,0 +1,619 @@
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      The Questa Project
+ * License URL: https://www.fontspring.com/licenses/the-questa-project/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: '2-questa_grande_regular_31';
+    src: url('My_Fonts/2-questa_grande_regular_31-webfont.woff2') format('woff2'),
+         url('My_Fonts/2-questa_grande_regular_31-webfont.woff') format('woff');
+    font-weight: normal; /* ca permet de mettre le texte en gras (bold)*/
+    font-style: normal; /* italic, oblique,  */
+
+}
+
+body{
+	 /*background-color: black;
+	 color : white; */
+	 /*background-image: url("images/fond_cv.png");*/
+	 /*background-attachment: scroll;    *//* l'image de fond défile avec le texte (par défaut). il y a aussi l'option fixed*/
+	 background-position: 30px 50px; /* 30 pixels de la gauche et à 50 pixels du haut*/ 
+	 /* Cette option n'as de valeur que si background-repeat a une valeur de no-repeat*/
+	 /*deux valeurs en pixels pour indiquer la position du fond par rapport au coin supérieur gauche de la page*/ 
+	 /*ou du paragraphe, si vous appliquez le fond à un paragraphe*/
+	 /*On peut aussi utiliser les mots  "top, bottom, left, center, right" exemple : background-position : top right;*/
+	 background-color: rgba(255,255,130,0.5); /* Pour les navigateurs plus récents :  La notation RGBa; où a veut dire le niveau de transparence*/
+	/*background-color: rgb(255,0,0); /* Pour les navigateurs anciens */
+	/* background-repeat: no-repeat; *//*Répétion du fond : repeat-y, repeat-x, repeat */ 
+	 background : url("images/fond_cv.png") scroll no-repeat ;
+	 opacity : 0.8; /*Il permet de jouer sur le niveau dd'opacité des elements, c'est l'inverse de la transparence*/
+}
+.Image  /*Ma photo de cv */
+{
+	width: 69%;
+}
+h2
+{
+  color:rgb(D1ECF0);  /*72B6CC 80,52,207*/
+  font-weight: bold; /*commentaire */
+  
+}
+.Start
+{
+   border : 1px blue solid;
+   width: 70%;
+   padding : 6px ; /*Pour aérer l'espace entre les éléments avec leurs bordures */
+   margin : 2px 0px 2px 0px;   /* en haut,  à droite,  en bas et à gauche, en suit l'aiguille d'une montre*/
+  /*,pour centrer le tout on peut utiliser auto à condition de mettre la largeur du block*/
+   box-shadow: 6px 6px 6px black;
+   border-left: 2px solid black;
+   border-right: 2px solid black;
+   border-radius: 10px;
+   height : 200px;
+  
+}
+
+.Titre  /* Titire du cv, quand on ecrit class ="Titre" sur .html */  
+{
+  text-align : center; /* justify, right, left */
+  text-decoration : underline;  /*blink: clignotant. Ne fonctionne pas sur tous les navigateurs (Internet Explorer et Google */
+  border : 1px blue solid;
+  border-radius : 20px / 10px;
+  box-shadow : 6px 6px 6px black; /*Dacalage horizontal, décalage vertical, adoucissement de dégradée, couleur de l'ombre*/ 
+  /*text-shadow : 6px 6px 0px black;*/ 
+  width: 70%;
+}
+#NomPrenom/* Mon nom et prénom id ="NomPrenom" */
+{
+text-decoration : underline;	
+}
+h2+p  /*le paragraphequi suit le titre h2 */
+{
+  color:green;
+  font-weight: bold; /*commentaire */
+  text-decoration : underline; /* Sous ligner*/
+  text-align : center
+}
+p
+{ 
+   font-size :1.0em;  /*12px;; *//* Changer le taille du texte p*/ /*On peut utiliser aussi les mots comme xx-small: minuscule ;x-small: très petit ;small: petit ;medium: moyen ;large: grand ;x-large: très grand ;*/
+   font-family : '2-questa_grande_regular_31' Arial, Impact, "Arial Black", Verdan, sans-serif; 
+   text-align : justify;  /*L'alignement ne fontionne que sur les balises en block: <p>, <div>,<h1>,<h2>, … */	
+   /*opacity : 0.3; */
+   width     :90%;  /*Largeur*/
+   /*height : ;*/     /*Hauteur*/
+   min-width : 400px;
+  /* max-width : */
+  /* min-height: */ /*Hauteur min*/
+  /* max-height: */     
+   padding : 6px ; /*Pour aérer l'espace entre les éléments avec leurs bordures */
+   margin : 2px 0 8px 1px;   /* en haut,  à droite,  en bas et à gauche, en suit l'aiguille d'une montre*/
+  /*,pour centrer le tout on peut utiliser auto à condition de mettre la largeur du block*/
+   overflow : auto;
+   border : 1px solid black; /*la largeur, la couleur, le type de bordure*/
+   background-color: rgba(255,0,0,0.5);
+ /*border: 3px blue outset;*/
+   box-shadow: 6px 6px 6px black;
+   border-left: 2px solid black;
+   border-right: 2px solid black;
+   border-radius: 10px;
+ 
+}
+p, li :/* p et li vont avoir les memes caractéristiques (Couleur Noir)*/
+{
+  color:black;
+}
+li 
+{   width:100%;
+    height:70%;
+	font-size : 1.0em;
+	margin : 1px 0 0px 0px;
+	/*border : 1px solid black; */
+  /*padding : 2px ;*/
+}
+li+strong 
+{
+	height:20%;
+	width:75%;	
+}
+div
+{
+	height:20%;
+	width : 50%;	
+}
+ul
+{
+	height:20%;
+	width : 90%;	
+}
+.Titre1
+{
+  color:blue;
+  font-weight: bold; /*commentaire */
+  
+}
+#Titre2
+{
+  color:green;
+  font-weight: bold; /*commentaire */
+  
+}
+.Log /* C'est pour modéfier une partie d'une paragraphe */
+{
+  color:green;
+  font-weight: bold; /*commentaire */
+}
+
+.Log:hover /* Apparence au survol des liens : le lien change de couleur que je le pointe de la souris*/
+{
+   text-decoration: underline;
+   color: blue;
+}
+
+.Log:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+}
+.Log:focus /* Quand le visiteur sélectionne le lien */
+{
+    background-color: #FFCC66;
+}
+h3 mark  /* cela veut dire, tout les mark qui sont en h3 serons  en blue et en gras et souligner */
+{
+   color:blue;
+   font-weight: bold; /*commentaire */
+   text-decoration : underline; 
+   width: 50%;   /*Manupule la largueur*/
+   /*hight :300px;  *//*Manipule la hauteur*/
+   background-color : #CCC;
+}
+h3
+{
+  border: 3px blue outset;
+  border-radius: 1px 10px 10px 1px;  /*Indique la valeur de la bordure dans chaque coin  (en haut à gauche ;en haut à droite; en bas à droite; en bas à gauche.)*/
+  box-shadow: 6px 6px 6px blue; /*le décalage horizontal de l'ombre, le décalage vertical de l'ombre, l'adoucissement du dégradé, la couleur de l'ombre*/
+  width: 600px;
+  width: 90%;
+  background-color : #CCC;
+  padding : 1px 1px 1px 2px;
+  }
+h4
+ {
+  padding : 0.2px ; /*Pour aérer les éléments avec la bordure*/
+ /* border : 1px solid black;*/
+  width : 25.50%; 
+  margin : 2px 1px 1px 1px;
+ }
+.Link /*Cela fait référence à tout les éléments de la page qui ont l'attribut class="Link"*/
+{
+ color:green;
+ font-weight: bold; /*commentaire */
+ width : 80px;
+}
+Link:focus
+{
+	 background-color: #FFCC66;
+}
+.Link:active
+{
+  background-color: #FFCC66;
+}
+Link:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: #AAA; /* Appliquer une couleur grise */
+}
+#conteneur  /*Cela fait référence à tout les éléments de la page qui ont l'attribut id="conteneur"; la différence avec class; c'est que on peut faire un seul id */ 
+/*parcontre on peut avoir plusieurs class*/
+{
+    display: flex;
+    flex-wrap: wrap-reverse; /*les éléments cote à cote */
+   /* flex-direction: row ;/*row : organisés sur une ligne (par défaut), column : organisés sur une colonne, ow-reverse : organisés sur une ligne, mais en ordre inversé
+	                column-reverse : organisés sur une colonne, mais en ordre inversé.  flex-direction : permet d'agencer ces éléments dans le sens que l'on veut*/
+	justify-content: center;	
+    align-items: center;	
+}
+
+
+.INTRO
+{
+	display:flex;
+	flex-direction:row; /* row , column , row-reverse */
+	flex-wrap:wrap;
+	/*border : 1px solid black;*/
+	justify-content : baseline; /*space-between; baseline; space-around; center, flex-start, flex-end, space-around*/
+	margin : 1px 1px 1px 1px;
+	margin-left : 1px;
+	padding : 1px 2px 160px 1px; 
+	width :70%;
+	height : 50px; 
+	display :inline-block;
+}
+.Menu
+{
+	/*display:flex;*/
+/*	float :center;  /*a voir */b
+	/*flex-wrap:wrap;*/
+/*	height : 212px; */
+/*	border : 1px solid black; */
+/*	width :750px; */
+/*	height : 160px; */
+/*	padding : 1px 1px 2px 7px; */
+/*	/*margin : 1px 5px 1px 50px;*/
+    padding-top : 5px;
+    margin-top : -8px;
+	margin-left :140px;
+	padding-top : 1px;
+	/*margin-top : 1px;*/
+	/*clear: both;*/
+/*	display: inline-block; /*Ils se positionnent les uns à côté des autres, On peut leur donner des dimensions précises   */ 
+   /* vertical-align: top;	*/
+  /*  vertical-align: top; */
+    display: inline-block;    
+    border: 1px solid blue;
+    vertical-align: top;
+	height : 210px;
+	width :795px;
+}
+.Figure 
+{
+	display: inline-block;
+    width: 70px;
+    height : 90px;
+    border: 1px solid black;
+    vertical-align: top;
+	/*clear : both;*/
+/*	margin : 2px 0px 8px 0px;
+	float  : left;
+	height : 100px;
+	padding : 1px 1px 1px 0px; 
+	background-position: top;
+	/*background-position: inherit;*/
+/*	display: inline-block;
+	border : 1px solid black;
+	/*margin-left : 1px;*/
+/*	margin : 1px 1px 1px 1px;
+	vertical-align: top; */
+	position: absolute;
+	left : 0px;
+    /*right: 0px;*/
+    /*bottom: 0px;*/
+	top : 60px;
+}
+.figure
+{
+	width: 70px;
+    height : 90px;
+}
+}
+.Intro:nth-child(1) /*M2 : Télécommunication Multimédia réseaux */
+{
+	border : 1px solid black;
+	margin : 1px 60px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	color :blue;
+	width :21%;
+	height : 20px;
+	/*flex:2;*/
+}
+.Intro:nth-child(2) /*M2 : Télécommunication Multimédia réseaux */
+{
+	
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	width :24%;
+	height : 20px;
+	/*flex:2;*/
+	color :blue;
+	position: absolute;
+	left : 210px;
+    /*right: 5px;*/
+    /*bottom: 0px;*/
+	top : 100px;
+}
+.Intro:nth-child(3) /*Tel */
+{
+	
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	color :blue;
+	width :12%;	
+    height : 20px;
+	position: absolute;
+	left : 610px;
+    /*right: 5px;*/
+    /*bottom: 0px;*/
+	top : 100px;
+
+}
+.Intro:nth-child(4) /*langue*/
+{
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	width :25%;
+	height : 20px;
+	position: absolute;
+	left : 160px;
+	top : 125px;
+	/*right: 5px;*/
+    /*bottom: 0px;*/
+}
+.Intro:nth-child(5) /*Permis*/
+{
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	text-decoration : underline;
+	width :12%;
+	height:20px;
+	position: absolute;
+	left : 160px;
+	top : 150px;
+}
+.Intro:nth-child(6) /*Mail*/
+{
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	width :18%;
+	height:20px;
+	position: absolute;
+	left : 610px;
+	top : 125px;
+}
+
+.Intro:nth-child(7) /*Nationnalité*/
+{
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	width :13%;
+	height:20px;
+	position: absolute;
+	left : 160px;
+	top : 175px;
+}
+.Intro:nth-child(8)/*Adresse*/
+{
+	border : 1px solid black;
+	margin : 1px 1px 1px 1px;
+	padding : 1px 1px 1px 1px;
+	width :22%;
+	height:52px;
+	position: absolute;
+	left : 610px;
+	top : 150px;
+}
+
+#contenur1
+{
+	
+}
+#contenur2
+{
+	
+}
+#contenur3
+{
+	
+}
+#contenur4
+{
+	
+}
+.Mes_competences
+{
+	/*border: 50%;*/
+	display : flex;
+	width : 90%;
+	color : blue;
+	display: flex; /*les éléments se positionnent l'un a cote de l'autre sur le même ligne*/
+	/* justify-content:space-around; //*center , space-between, space-around;*/ 
+    align-items: center;/*la valeur par défaut : stretch*/ 
+   /* border : 1px solid black;*/
+	flex-direction:row;
+	flex-wrap:wrap; /*les éléments peuvent revenir a la ligne quand ils ont plus de places*/
+	justify-content:space-between; /*center; space-around;*/ /*l'alignement des éléments*/
+	align-items::stretch;
+	align-content : space-between;
+	border: 2px solid #444;
+}
+
+.Skills:nth-child(1)   /*Systèmes embarqueé */
+{
+	/*order :1;*/
+    flex-shrink: 1;
+	/*border : 1px solid black;*/
+	width:25%;	
+	order :1;
+	
+}
+.Skills:nth-child(2) /* C */
+{
+	order:2;
+	/*border : 1px solid black;*/
+	width:25%;
+
+}
+.Skills:nth-child(3) /*Python*/
+{
+	order:3;
+   /*border : 1px solid black;*/
+	width:25%;
+	flex-wrap : wrap;
+	
+} 
+.Skills:nth-child(4) /* Quartus */
+{
+	 order:4;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(5) /*Transmissions numériques*/
+{
+	order:5;
+	/*border : 1px solid black;*/
+	width:25%;
+	
+}
+.Skills:nth-child(6) /*Matlab*/
+{  
+    order:6;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(7) /* Java */
+{
+	order:7;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(8) /*MongoDB*/
+{
+	order:8;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(9) /*Traitement des données*/
+{
+	order:9;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(10) /* R */
+{
+	order:10;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(11) /* C++ */
+{
+	order:11;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+.Skills:nth-child(12) /* Visual Studio */
+{
+	order : 12;
+	/*border : 1px solid black;*/
+	width:25%;
+}
+
+.Inters_job_etudiant
+{
+	order : 16;
+	border : 1px solid black;
+	width:76%
+	
+}
+#conteneur1
+{
+	/*border : 2px solid #444;*/
+	/*flex-direction : row-column; *//*row-reverse, */
+	flex-wrap: wrap;
+	justify-content:space-around;  /*flex-start; *//*flex-end*/
+	display :flex;
+	color: green;
+}
+.element1
+{
+	width :8%;
+	height : 13px;
+}
+.element1:nth-child(1)
+{
+	background-color:orange;
+	position : relative;
+    left: 16%;
+    top: 319%;
+	width: 15%;
+	border-radius: 11px 11px 11px 11px;  /*Indique la valeur de la bordure dans chaque coin  (en haut à gauche ;en haut à droite; en bas à droite; en bas à gauche.)*/
+    box-shadow: 1px 1px 1px orange;
+	display:inline-block;;
+}
+#conteneur2
+{
+	/*border : 2px solid #444;*/
+	/*flex-direction : row-column; *//*row-reverse, */
+	flex-wrap: wrap;
+	justify-content:space-around;  /*flex-start; *//*flex-end*/
+	display :flex;
+	color: green;
+}
+.element2
+{
+	width :8%;
+	height : 13px;
+}
+.element2:nth-child(1)
+{
+	background-color:blue;
+	position : relative;
+	left: 16%;
+    top: 319%;
+    width: 15%;
+	border-radius: 11px 11px 11px 11px;  /*Indique la valeur de la bordure dans chaque coin  (en haut à gauche ;en haut à droite; en bas à droite; en bas à gauche.)*/
+    box-shadow: 1px 1px 1px blue;
+    display:inline-block;
+	z-index : 2;
+}
+
+.Inters_job_etudiant:nth-child(1)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(2)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(3)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(4)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(5)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(6)
+{
+	 display: flex;
+	 width : 910px;
+}
+.Inters_job_etudiant:nth-child(7)
+{
+	 display: flex;
+	 width : 910px;
+}
+
+
+}
